@@ -1,0 +1,45 @@
+* {
+  @include box-sizing(border-box);
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-size: $font-sizenormal;
+  font-family: $font-size-sm;
+  color: $color-b;
+  background: $background-color;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+a,
+button {
+  &:hover,
+  &:focus,
+  &:active {
+    outline: 0;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+@include respond-below("medium") {
+  html,
+  body {
+    background: $color-a;
+  }
+}

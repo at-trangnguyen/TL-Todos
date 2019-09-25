@@ -1,0 +1,25 @@
+// Colors
+$primary-color: #7bb062;
+$background-color: #f5f5f5;
+$disabled-color-a: #f3f3f3;
+$disabled-color-b: #ededed;
+$color-a: #ffffff;
+$color-b: #333;
+$color-c: #909090;
+
+// Fonts
+$font-family-body: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$font-size-xs: 10px;
+$font-size-sm: 12px;
+$font-sizenormal: 14px;
+$font-size-lg: 28px;
+
+// == Breakpoints ===
+$breakpoints: (
+  small: 480px,
+  medium: 768px,
+  wide: 960px,
+  large: 1024px,
+  largest: 1280px
+);
