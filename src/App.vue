@@ -5,7 +5,7 @@
 </template>
 
 <script>
-  import Feature from './components/Features/Feature.vue';
+  import Feature from './components/Feature/Feature.vue';
 
   export default {
     name: 'app',
