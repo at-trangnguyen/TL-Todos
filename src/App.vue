@@ -1,13 +1,11 @@
 <template>
   <div id="app">
-    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <Feature/>
+    <feature/>
   </div>
 </template>
 
 <script>
-  import Feature from './components/features/Feature.vue'
+  import Feature from './components/Features/Feature.vue'
 
   export default {
     name: 'app',

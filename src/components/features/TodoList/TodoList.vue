@@ -1,14 +1,14 @@
 <template>
   <div>
     <p>TodoList is works!</p>
-    <TodoItem/>
+    <todo-item/>
   </div>
 </template>
 
 <script>
-  import TodoItem  from './todo-item/TodoItem.vue'
+  import TodoItem from './TodoItem/TodoItem.vue'
   export default {
-    name: 'todo-item',
+    name: 'todo-list',
     components: {
       TodoItem
     }

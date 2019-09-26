@@ -1,12 +1,12 @@
 <template>
   <div>
     <p>Feature is works!</p>
-    <TodoList/>
+    <todo-list/>
   </div>
 </template>
 
 <script>
-  import TodoList  from './todo-list/TodoList.vue'
+  import TodoList  from './TodoList/TodoList.vue'
 
   export default {
     name: 'feature',
