@@ -6,11 +6,12 @@
 </template>
 
 <script>
-  import TodoItem from './TodoItem/TodoItem.vue'
+  import TodoItem from './TodoItem/TodoItem.vue';
+
   export default {
     name: 'todo-list',
     components: {
       TodoItem
     }
-  }
+  };
 </script>

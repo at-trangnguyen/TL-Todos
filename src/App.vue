@@ -5,16 +5,16 @@
 </template>
 
 <script>
-  import Feature from './components/Features/Feature.vue'
+  import Feature from './components/Features/Feature.vue';
 
   export default {
     name: 'app',
     components: {
       Feature
     }
-  }
+  };
 </script>
 
 <style lang="scss">
-@import "./assets/styles/styles.scss";
+  @import "./assets/styles/styles.scss";
 </style>

@@ -6,12 +6,12 @@
 </template>
 
 <script>
-  import TodoList  from './TodoList/TodoList.vue'
+  import TodoList  from './TodoList/TodoList.vue';
 
   export default {
     name: 'feature',
     components: {
       TodoList
     }
-  }
+  };
 </script>
