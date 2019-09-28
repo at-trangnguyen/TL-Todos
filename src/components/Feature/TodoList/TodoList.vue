@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="todo-list-wrapper">
     <p>TodoList is works!</p>
     <todo-item/>
   </div>

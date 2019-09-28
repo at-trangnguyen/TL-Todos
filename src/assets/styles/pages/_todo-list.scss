@@ -1,0 +1,25 @@
+.page-wrapper {
+  @include pxRem(padding, 15 20);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .logo-image {
+      @include pxRem(width, 80);
+      @include pxRem(border-radius, 12);
+      box-shadow: -1px -1px 1px #ededed, 1px 1px 1px #909090;
+    }
+  }
+  .page-title {
+    @include pxRem(font-size, 40);
+    @include pxRem(padding-left, 15);
+    @include pxRem(letter-spacing, 3);
+    color: map-get($color, primary);
+    display: block;
+    text-transform: uppercase;
+    text-shadow: -1px -1px 1px #ededed, 1px 1px 1px #909090;
+  }
+}
