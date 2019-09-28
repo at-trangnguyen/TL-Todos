@@ -68,4 +68,49 @@
       border-color: ap-get($color, secondary);
     }
   }
+  .todo-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .tabs {
+      @include pxRem(padding, 20 0);
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      .tab-item {
+        display: flex;
+        align-items: center;
+        &:last-child {
+          &::after {
+            display: none;
+          }
+        }
+        &:after {
+          @include pxRem(width, 8);
+          @include pxRem(height, 8);
+          @include pxRem(margin, 0 25);
+          content: "";
+          display: block;
+          left: 100%;
+          background-color: map-get($color, primary);
+          border-radius: 50%;
+        }
+      }
+      a {
+        @include pxRem(padding, 5 8);
+        color: map-get($color, text);
+        text-transform: capitalize;
+        transition: all 0.3s ease-in-out;
+        border: 1px solid transparent;
+        &.active {
+          @include pxRem(border-radius, 5);
+          color: map-get($color, primary);
+          border-color: map-get($color, primary);
+        }
+        &:hover {
+          color: map-get($color, primary);
+        }
+      }
+    }
+  }
 }
