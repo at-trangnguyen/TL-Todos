@@ -1,0 +1,13 @@
+.btn {
+  @include pxRem(padding, 8 12);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid map-get($color, border);
+  background-color: map-get($color, white);
+  &.btn-primary {
+    background-color: map-get($color, primary);
+    color: map-get($color, white);
+    border-color: map-get($color, primary);
+  }
+}

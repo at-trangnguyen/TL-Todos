@@ -4,6 +4,7 @@
   justify-content: center;
   flex-direction: column;
   .logo-wrapper {
+    @include pxRem(padding-bottom, 20);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,5 +22,44 @@
     display: block;
     text-transform: uppercase;
     text-shadow: -1px -1px 1px #ededed, 1px 1px 1px #909090;
+  }
+}
+
+.todo-list-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .form-todo {
+    @include pxRem(padding, 20 0);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .form-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 60%;
+  }
+  .add-task-input {
+    @include pxRem(padding, 12 45 12 15);
+    @include pxRem(border-radius, 22);
+    @include pxRem(font-size, 18);
+    border: 1px solid map-get($color, border);
+    width: 100%;
+    margin: 0 auto;
+  }
+  .btn-add {
+    @include pxRem(width, 30);
+    @include pxRem(height, 30);
+    @include pxRem(right, 8);
+    border-radius: 50%;
+    padding: 0;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: map-get($color, secondary);
+      border-color: ap-get($color, secondary);
+    }
   }
 }
