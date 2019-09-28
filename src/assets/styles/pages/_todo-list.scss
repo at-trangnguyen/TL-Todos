@@ -21,6 +21,7 @@
     color: map-get($color, primary);
     display: block;
     text-transform: uppercase;
+    font-weight: 600;
     text-shadow: -1px -1px 1px #ededed, 1px 1px 1px #909090;
   }
 }
@@ -36,6 +37,7 @@
     width: 100%;
   }
   .form-group {
+    @include pxRem(max-width, 550);
     position: relative;
     display: flex;
     align-items: center;
