@@ -48,6 +48,10 @@
     border: 1px solid map-get($color, border);
     width: 100%;
     margin: 0 auto;
+    transition: all 0.2s ease-in-out;
+    &:focus {
+      border-color: map-get($color, primary);
+    }
   }
   .btn-add {
     @include pxRem(width, 30);
