@@ -4,7 +4,7 @@
   justify-content: center;
   flex-direction: column;
   .logo-wrapper {
-    @include pxRem(padding-bottom, 20);
+    @include pxRem(padding, 20 0);
     display: flex;
     justify-content: center;
     align-items: center;
