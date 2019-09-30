@@ -1,0 +1,116 @@
+.page-wrapper {
+  @include pxRem(padding, 15 20);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .logo-wrapper {
+    @include pxRem(padding, 20 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .logo-image {
+      @include pxRem(width, 80);
+      @include pxRem(border-radius, 12);
+      box-shadow: -1px -1px 1px #ededed, 1px 1px 1px #909090;
+    }
+  }
+  .page-title {
+    @include pxRem(font-size, 40);
+    @include pxRem(padding-left, 15);
+    @include pxRem(letter-spacing, 3);
+    color: map-get($color, primary);
+    display: block;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-shadow: -1px -1px 1px #ededed, 1px 1px 1px #909090;
+  }
+}
+
+.todo-list-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .form-todo {
+    @include pxRem(padding, 20 0);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .form-group {
+    @include pxRem(max-width, 550);
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 60%;
+  }
+  .add-task-input {
+    @include pxRem(padding, 12 45 12 15);
+    @include pxRem(border-radius, 22);
+    @include pxRem(font-size, 18);
+    border: 1px solid map-get($color, border);
+    width: 100%;
+    margin: 0 auto;
+    transition: all 0.2s ease-in-out;
+    &:focus {
+      border-color: map-get($color, primary);
+    }
+  }
+  .btn-add {
+    @include pxRem(width, 30);
+    @include pxRem(height, 30);
+    @include pxRem(right, 8);
+    border-radius: 50%;
+    padding: 0;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: map-get($color, secondary);
+      border-color: ap-get($color, secondary);
+    }
+  }
+  .todo-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .tabs {
+      @include pxRem(padding, 20 0);
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      .tab-item {
+        display: flex;
+        align-items: center;
+        &:last-child {
+          &::after {
+            display: none;
+          }
+        }
+        &:after {
+          @include pxRem(width, 8);
+          @include pxRem(height, 8);
+          @include pxRem(margin, 0 25);
+          content: "";
+          display: block;
+          left: 100%;
+          background-color: map-get($color, primary);
+          border-radius: 50%;
+        }
+      }
+      a {
+        @include pxRem(padding, 5 8);
+        color: map-get($color, text);
+        text-transform: capitalize;
+        transition: all 0.3s ease-in-out;
+        border: 1px solid transparent;
+        &.active {
+          @include pxRem(border-radius, 5);
+          color: map-get($color, primary);
+          border-color: map-get($color, primary);
+        }
+        &:hover {
+          color: map-get($color, primary);
+        }
+      }
+    }
+  }
+}

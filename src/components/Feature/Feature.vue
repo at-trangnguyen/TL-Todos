@@ -1,6 +1,9 @@
 <template>
-  <div>
-    <p>Feature is works!</p>
+  <div class="page-wrapper">
+    <div class="logo-wrapper">
+      <img class="logo-image" src="../../assets/images/logo_icon.png" alt="logo">
+      <h1 class="page-title">Todoist</h1>
+    </div>
     <todo-list/>
   </div>
 </template>

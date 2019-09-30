@@ -8,7 +8,7 @@ $color-b: #333;
 $color-c: #909090;
 
 // Fonts
-$font-family-body: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-body: "Open Sans", sans-serif;
 
 $font-size-xs: 10px;
 $font-size-sm: 12px;
@@ -22,4 +22,14 @@ $breakpoints: (
   wide: 960px,
   large: 1024px,
   largest: 1280px
+);
+
+$color: (
+  primary: #20B2AA,
+  secondary: #1b9891,
+  white: #ffffff,
+  black: #000000,
+  steal: #008080,
+  border: #cdd6dd,
+  text: #909090,
 );

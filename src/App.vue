@@ -16,5 +16,6 @@
 </script>
 
 <style lang="scss">
+  @import "./assets/icofont/icofont.min.css";
   @import "./assets/styles/styles.scss";
 </style>
