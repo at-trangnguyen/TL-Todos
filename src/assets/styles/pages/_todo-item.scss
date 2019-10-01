@@ -8,7 +8,7 @@
   flex-direction: column;
   .todo-item-wrapper {
     @include pxRem(max-width, 550);
-    @include pxRem(padding, 15);
+    @include pxRem(padding, 10);
     @include pxRem(border-radius, 5);
     @include pxRem(margin-bottom, 12);
     display: flex;
