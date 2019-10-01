@@ -9,7 +9,7 @@
 <script>
   import TodoItem from './TodoItem/TodoItem';
   import TodoFilter from './TodoFilter/TodoFilter';
-  import FormAddTodo from './FormAddTodo/FormAddTodo'
+  import FormAddTodo from './FormAddTodo/FormAddTodo';
 
   export default {
     name: 'todo-list',
