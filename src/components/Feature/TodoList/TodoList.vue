@@ -2,7 +2,11 @@
   <div class="todo-list-wrapper">
     <form-add-todo/>
     <todo-filter/>
-    <todo-item/>
+    <ul class="todos">
+      <li class="todo-item">
+        <todo-item/>
+      </li>
+    </ul>
   </div>
 </template>
 

@@ -5,6 +5,9 @@
   align-items: center;
   border: 1px solid map-get($color, border);
   background-color: map-get($color, white);
+  &.btn-no-style {
+    border: none;
+  }
   &.btn-primary {
     background-color: map-get($color, primary);
     color: map-get($color, white);
