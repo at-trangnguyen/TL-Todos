@@ -6,9 +6,8 @@
 </template>
 
 <script>
-  import TodoHeader from '../ComponentGlobal/TodoHeader'
+  import TodoHeader from '../ComponentGlobal/TodoHeader';
   import TodoList from './TodoList/TodoList';
-
   export default {
     name: 'feature',
     components: {
