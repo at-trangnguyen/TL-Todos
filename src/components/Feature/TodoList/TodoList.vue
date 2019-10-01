@@ -7,14 +7,14 @@
 </template>
 
 <script>
-  import TodoItem from './TodoItem/TodoItem';
-  import TodoFilter from './TodoFilter/TodoFilter';
   import FormAddTodo from './FormAddTodo/FormAddTodo';
+  import TodoFilter from './TodoFilter/TodoFilter';
+  import TodoItem from './TodoItem/TodoItem';
   export default {
     name: 'todo-list',
     components: {
-      TodoFilter,
       FormAddTodo,
+      TodoFilter,
       TodoItem
     }
   };
