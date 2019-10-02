@@ -41,10 +41,15 @@
       }
     },
     methods: {
-      updateTodo(todo) {
+      updateTodo(data) {
+        const todo = data.item;
         for (let i = 0; i < this.todos.length; i++) {
           if (this.todos[i].id === todo.id) {
-            this.todos[i].task = todo.task;
+            if (data.action === 'remove') {
+              this.todos.splice(i, 1);
+            } else {
+              this.todos[i].task = todo.task;
+            }
           }
         }
       }

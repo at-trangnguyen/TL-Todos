@@ -5,7 +5,7 @@
       <label class="lb-checkbox" :for="todo.id"></label>
       <span class="task-name">{{ todo.task }}</span>
     </div>
-    <button class="btn btn-no-style btn-remove">
+    <button class="btn btn-no-style btn-remove" @click="removeTodo()">
       <i class="icofont-close"></i>
     </button>
   </li>
@@ -22,7 +22,10 @@
         } else {
           this.todo.status = 'active';
         }
-        this.$emit("inputData", this.todo);
+        this.$emit('inputData', {action: 'update', item: this.todo});
+      },
+      removeTodo() {
+        this.$emit('inputData', {action: 'remove', item: this.todo});
       }
     }
   };
