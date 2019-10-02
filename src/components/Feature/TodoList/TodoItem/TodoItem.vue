@@ -1,5 +1,5 @@
 <template>
-  <div class="todo-item-wrapper">
+  <li class="todo-item">
     <div class="todo-info">
       <input id="checkbox" type="checkbox" class="checkbox">
       <label class="lb-checkbox" for="checkbox"></label>
@@ -8,7 +8,7 @@
     <button class="btn btn-no-style btn-remove">
       <i class="icofont-close"></i>
     </button>
-  </div>
+  </li>
 </template>
 
 <script>

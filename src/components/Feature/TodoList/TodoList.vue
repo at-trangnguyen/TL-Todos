@@ -3,9 +3,7 @@
     <form-add-todo/>
     <todo-filter/>
     <ul class="todos">
-      <li class="todo-item">
-        <todo-item/>
-      </li>
+      <todo-item/>
     </ul>
   </div>
 </template>

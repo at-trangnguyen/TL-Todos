@@ -3,6 +3,7 @@
   & + label {
     @include pxRem(width, 20);
     @include pxRem(height, 20);
+    @include pxRem(margin-right, 10);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,7 +13,6 @@
     border-radius: 50%;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
-    @include pxRem(margin-right, 10);
     &::after {
       @include pxRem(font-size, 12);
       content: "\f021";
