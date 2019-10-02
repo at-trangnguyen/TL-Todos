@@ -1,7 +1,9 @@
 <template>
   <li class="todo-item">
     <div class="todo-info">
-      <input :id="todo.id" type="checkbox" class="checkbox" @change="changeStatus(todo.status)" :checked="todo.status === 'completed'">
+      <input :id="todo.id" type="checkbox" class="checkbox"
+        @change="changeStatus(todo.status)"
+        :checked="todo.status === 'completed'">
       <label class="lb-checkbox" :for="todo.id"></label>
       <span class="task-name">{{ todo.task }}</span>
     </div>
@@ -19,7 +21,7 @@
       changeStatus(status) {
         if (status === 'active') {
           this.todo.status = 'completed';
-        } else {
+        } else if (status === 'update') {
           this.todo.status = 'active';
         }
         this.$emit('inputData', {action: 'update', item: this.todo});
