@@ -5,64 +5,16 @@
     clear: both;
   }
 }
-@mixin flex-wrap($wrap) {
-  -webkit-flex-wrap: $wrap;
-     -moz-flex-wrap: $wrap;
-      -ms-flex-wrap: $wrap;
-          flex-wrap: $wrap;
-}
-@mixin flexbox() {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-}
-@mixin opacity($opacity) {
-  -webkit-opacity: $opacity;
-     -moz-opacity: $opacity;
-          opacity: $opacity;
-}
-@mixin transform($value) {
-  -webkit-transform: $value;
-      -ms-transform: $value;
-          transform: $value;
-}
-@mixin transformX($transition) {
-  -webkit-transform: translateX($transition);
-      -ms-transform: translateX($transition);
-          transform: translateX($transition);
-}
-@mixin transformY($transition) {
-  -webkit-transform: translateY($transition);
-      -ms-transform: translateY($transition);
-          transform: translateY($transition);
-}
-@mixin transition($transition) {
-  -webkit-transition: $transition;
-     -moz-transition: $transition;
-      -ms-transition: $transition;
-          transition: $transition;
-}
-@mixin appearance($data) {
-  -webkit-appearance: $data;
-     -moz-appearance: $data;
-          appearance: $data;
-}
-@mixin box-sizing($border-box) {
-  -webkit-box-sizing: $border-box;
-     -moz-box-sizing: $border-box;
-          box-sizing: $border-box;
-}
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-          border-radius: $radius;
-}
-@mixin box-shadow($shadow) {
-  -webkit-box-shadow: $shadow;
-     -moz-box-shadow: $shadow;
-          box-shadow: $shadow;
+
+@mixin font-smoothing($value: antialiased) {
+  @if $value == antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
 }
 
 /**

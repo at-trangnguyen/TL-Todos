@@ -10,10 +10,12 @@ $color-c: #909090;
 // Fonts
 $font-family-body: "Open Sans", sans-serif;
 
-$font-size-xs: 10px;
-$font-size-sm: 12px;
-$font-sizenormal: 14px;
-$font-size-lg: 28px;
+$font-size: (
+  xs: 10px,
+  sm: 12px,
+  normal: 14px,
+  lg: 28px
+);
 
 // == Breakpoints ===
 $breakpoints: (
@@ -32,4 +34,8 @@ $color: (
   steal: #008080,
   border: #cdd6dd,
   text: #909090,
+  success: #5cb85c,
+  info: #5bc0de,
+  danger: #d9534f,
+  warning: #f0ad4e,
 );

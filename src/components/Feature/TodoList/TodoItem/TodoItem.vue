@@ -1,7 +1,14 @@
 <template>
-  <div>
-    <p>Todo item is works!</p>
-  </div>
+  <li class="todo-item">
+    <div class="todo-info">
+      <input id="checkbox" type="checkbox" class="checkbox">
+      <label class="lb-checkbox" for="checkbox"></label>
+      <span class="task-name">Create Todo</span>
+    </div>
+    <button class="btn btn-no-style btn-remove">
+      <i class="icofont-close"></i>
+    </button>
+  </li>
 </template>
 
 <script>

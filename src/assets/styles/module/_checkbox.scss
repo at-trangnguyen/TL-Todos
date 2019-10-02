@@ -1,0 +1,35 @@
+.checkbox {
+  display: none;
+  & + label {
+    @include pxRem(width, 20);
+    @include pxRem(height, 20);
+    @include pxRem(margin-right, 10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 1px solid map-get($color, border);
+    background-color: map-get($color, white);
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    &::after {
+      @include pxRem(font-size, 12);
+      content: "\f021";
+      display: inline-block;
+      font-family: 'IcoFont';
+      transition: all 0.2s ease-in-out;
+      color: map-get($color, white);
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  &:checked + label {
+    background-color: map-get($color, success);
+    border-color: map-get($color, success);
+    &::after {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
