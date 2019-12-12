@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <feature/>
+    <login/>
   </div>
 </template>
 
 <script>
-  import Feature from './components/Feature/Feature.vue';
+  import Login from './components/Feature/Login.vue';
 
   export default {
     name: 'app',
     components: {
-      Feature
+      Login
     }
   };
 </script>
